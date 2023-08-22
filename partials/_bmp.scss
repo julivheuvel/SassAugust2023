@@ -1,0 +1,43 @@
+@for $i from 1 through 100 {
+    
+    .m-#{$i} {
+        margin: #{$i}#{"px"};
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}#{"px"};
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}#{"px"};
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}#{"px"};
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}#{"px"};
+    }
+    .p-#{$i} {
+        padding: #{$i}#{"px"};
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}#{"px"};
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}#{"px"};
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}#{"px"};
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}#{"px"};
+    }
+}
+
+
+@each $key, $val in $colors {
+
+    @for $i from 1 through 10 {
+        .b-#{$key}-#{$i}{
+            border: #{$val} #{$i}#{"px"} solid;
+        }
+    }
+}
